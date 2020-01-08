@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+body{
+	width:25%;
+	margin: 0 auto;
+	display:block;
+	background-image: url(../images/crossword.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: 'Comfortaa', cursive;
+}
+
+.home				{ position: absolute; top: 0; right: 0; width: 6%; height: 10%;}
+.back				{ position: absolute; top: 0; left: 0; width: 6%; height: 10%;}
+
+h1{
+	font-family: 'Comfortaa', bold;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+td{
+	height: 30px;
+	width: 30px;
+}
+
+/*buttons*/
+
+.rnd-button{
+	height:45px;
+	width: 100px;
+	position:relative;
+	left: 120px;
+	font-family: 'Comfortaa', cursive;
+	font-size: large;
+}
+
+.cEasy-button{
+	height:45px;
+	width: 100px;
+	position:relative;
+	left: 90px;
+	font-family: 'Comfortaa', cursive;
+	font-size: large;
+}
+
+.cHard-button{
+	height:45px;
+	width: 100px;
+	position:relative;
+	left: 68px;
+	font-family: 'Comfortaa', cursive;
+	font-size: large;
+}
+
+.virus-button{
+	height:45px;
+	width: 100px;
+	position:relative;
+	left: 215px;
+	font-family: 'Comfortaa', cursive;
+	font-size: large;
+}
+
+/*------------buttons-------------*/
+
+/*crosswords*/
+#rnd-crossword-box{
+	font-family: 'Comfortaa', cursive;
+	position: relative;
+	right: 320px;
+}
+#rnd-hintsTable{
+	font-family: 'Comfortaa', cursive;
+	font-size: x-large;
+	width: 480px;
+	float: left;
+	clear: left;
+	position: relative;
+	left: 330px;
+	top: -380px;
+}
+
+#cEasy-crossword-box{
+	font-family: 'Comfortaa', cursive;
+	position: relative;
+	right: 150px;
+	top: 60px;
+}
+#cEasy-hintsTable{
+	font-family: 'Comfortaa', cursive;
+	font-size: x-large;
+	width: 480px;
+	float: left;
+	clear: left;
+	position: relative;
+	left: 330px;
+	top: -260px;
+}
+
+#cHard-crossword-box{
+	font-family: 'Comfortaa', cursive;
+	position: relative;
+	right: 270px;
+	top: -20px;
+}
+#cHard-hintsTable{
+	font-family: 'Comfortaa', cursive;
+	font-size: x-large;
+	width: 480px;
+	float: left;
+	clear: left;
+	position: relative;
+	left: 285px;
+	top: -620px;
+}
+
+#virus-crossword-box{
+	font-family: 'Comfortaa', cursive;
+	position: relative;
+	right: 415px;
+}
+#virus-hintsTable{
+	font-family: 'Comfortaa', cursive;
+	font-size: x-large;
+	width: 480px;
+	float: left;
+	clear: left;
+	position: relative;
+	left: 350px;
+	top: -580px;
+}
+
+/*----------crosswords------------*/
+
+.inputBox{
+    width: 40px;
+    height:40px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+#crossword{
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	/*border: 1px solid black;*/
+}
+
+/*-------------Reading Buttons-------------------*/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.button-1 {
+	position: absolute;
+	right: 7%;
+	top: 1%;
+	width: 170px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+	display: inline-block;
+	background-color: transparent;
+	border: 3px solid rgb(75, 37, 37);
+	border-radius: 50px;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+	color: rgb(75, 37, 37);
+}
+.button-1:hover {
+	box-shadow: 0 0 10px 0 rgb(75, 37, 37) inset, 0 0 20px 2px rgb(75, 37, 37);
+	border: 3px solid rgb(75, 37, 37);
+}
+
+.button-2 {
+	position: absolute;
+	left: 3%;
+	top: 1%;
+	width: 85px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+	display: inline-block;
+	background-color: transparent;
+	border: 3px solid #ff0251;
+	color: #ff0251;
+	transition: .3s;
+}
+.button-2:hover {
+	animation: pulse 1s infinite;
+	transition: .3s;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	70% {
+		transform: scale(.9);
+	}
+		100% {
+		transform: scale(1);
+	}
+}
